@@ -274,7 +274,6 @@
 
 /* PROGRAM */
 .program {
-    margin: 80px 0 80px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -292,49 +291,8 @@
     text-decoration: overline;
 }
 
-/* ABOUT US */
-.about-us {
-    margin: 80px 0 80px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-}
-
-.about-us h1 {
-    font-size: 30px;
-}
-
-.about-us h1 a {
-    color: #2f668f;
-    text-decoration: none;
-    text-decoration: overline;
-}
-
-/* CONTACT US */
-.contact-us {
-    margin: 80px 0 80px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-}
-
-.contact-us h1 {
-    font-size: 35px;
-}
-
-.contact-us h1 a {
-    color: #2f668f;
-    text-decoration: none;
-    text-decoration: overline;
-}
-
 /* NEWS */
 .news {
-    margin: 80px 0 80px 0;
     display: flex;
     align-items: center;
     justify-content: center;
