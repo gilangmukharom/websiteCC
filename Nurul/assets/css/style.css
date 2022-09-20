@@ -57,9 +57,9 @@ img{
 }
 
 .rows .detail{
-    background-color: rgba(255, 255, 255, 0.527);
+    background-color: rgba(255, 255, 255, 0.45);
     position: absolute;
-    bottom: -43%;
+    bottom: -35%;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
@@ -81,45 +81,41 @@ img{
 }
 
 .label .category{
-    padding: 5px 20px;
+    padding: 5px 12px;
     background-color: #0a7ae3b3;
     color: #fff;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 500;
     border-radius: 5px;
 }
 
 .label .access{
-    padding: 5px 20px;
+    padding: 5px 12px;
     background-color: #Ffcd32;
     color: #000;
-    font-size: 12px;
-    font-weight: 600;
+    font-size: 11px;
+    font-weight: 500;
     border-radius: 5px;
 }
 
 
 .detail .title-card h1{
-    padding: 1px 0px;
-    font-size: 18px;
+    padding: 10px 0px;
+    font-size: 16px;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
     color: #4a4a4a;
 }
 
 .detail .body-card{
-    margin: 25px 0;
+    margin: 10px 0;
 }
 
 .fa-ul{
-    font-size: 14px;
+    font-size: 13px;
     font-family: 'Poppins', sans-serif;
-    align-items: baseline;
+    
 }
-
-
-
-
 
 
 
