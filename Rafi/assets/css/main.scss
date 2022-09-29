@@ -63,4 +63,16 @@ body {
       font-size: 14px;
     }
   }
+
+  .card:hover {
+    border: 2px solid rgba(21, 69, 201, 0.7);
+    transition: all 0.1s ease-in-out;
+  }
+}
+
+@media (min-width: 1400px) {
+  .news--main .card {
+    width: 25rem;
+    height: 42rem;
+  }
 }
