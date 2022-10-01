@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+.jumbotron {
+    padding: 100px;
+    background-color: #1e4466;
+    text-align: center;
+    color: #fff;
+}
+
+.container-contact-us {
+    width: 90%;
+    margin-inline: auto;
+    transition: all 0.3s linear;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+
+.container-contact-us i {
+    font-size: 25px;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left .line {
+    width: 300px;
+    background-color: #1e4466;
+    margin: 12px 0px;
+    height: 4px;
+    border-radius: 30px;
+}
+
+.left .telp {
+    display: flex;
+    border: 2px solid #1e4466;
+    padding: 10px 130px;
+    border-radius: 30px;
+    align-items: center;
+}
+
+.left .telp i {
+    padding: 0px 10px;
+}
+
+.left .telp h3 {
+    padding: 0px 10px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 80px;
+    border-radius: 30px;
+}
+
+.right div {
+    margin-bottom: 30px;
+}
+
+.right .keep-connected {
+    padding-bottom: 10px;
+}
+
+.right .instagram,
+.facebook,
+.twitter,
+.tiktok,
+.youtube {
+    display: flex;
+    align-items: center;
+}
+
+.right i {
+    padding: 0px 20px 0px;
+}
