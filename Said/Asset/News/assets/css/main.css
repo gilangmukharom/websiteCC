@@ -1,0 +1,69 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 5rem;
+}
+
+.news--main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 3rem;
+}
+
+.news--main .card {
+  width: 20rem;
+  height: 38rem;
+  margin: 1.5rem;
+  border-radius: 10px;
+}
+
+.news--main .card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.news--main .card .card-body {
+  margin: 10px;
+}
+
+.news--main .card h6 {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.news--main .card h6 span {
+  font-weight: bold;
+}
+
+.news--main .card h5 {
+  font-weight: bold;
+}
+
+.news--main .card h5 a {
+  color: #222;
+  text-decoration: none;
+}
+
+.news--main .card .card-text {
+  font-size: 14px;
+}
+
+.news--main .card:hover {
+  border: 2px solid rgba(21, 69, 201, 0.7);
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+@media (min-width: 1400px) {
+  .news--main .card {
+    width: 25rem;
+    height: 42rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
