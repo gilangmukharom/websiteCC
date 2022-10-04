@@ -1,21 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-.jumbotron {
-    padding: 100px;
-    margin-bottom: -180px;
-    background-color: #1e4466;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 600;
-    color: #fff;
-}
-
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: #c9e2fa;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -28,6 +17,255 @@ body {
     transition: all .3s linear;
 }
 
+.container-navbar {
+    width: 90%;
+    margin-inline: auto;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+  }
+  
+  .navbar {
+    padding: 8px 0 8px 0;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    transition: all 0.3s ease;
+    border-radius: 0 0 40px 40px;
+  }
+  
+  
+  /* NAVBAR - SCROLLING ACTIVE */
+  .navbar.scrolling-active {
+    background-color: #2f668f;
+    padding: 2px 0 2px 0;
+  }
+  
+  .navbar.scrolling-active .box-navbar .brand h1 {
+    color: white;
+  }
+  
+  .navbar.scrolling-active .box-navbar .navigation ul li {
+    padding: 8px 10px;
+  }
+  
+  .navbar.scrolling-active .box-navbar .navigation ul li:hover {
+    background-color: #e8bd3b;
+  }
+  
+  .navbar.scrolling-active .box-navbar .navigation ul li a {
+    color: white;
+    padding: 8px 10px;
+  }
+
+  .navbar.scrolling-active .box-navbar .navigation ul li a:hover {
+    color: #2f668f;
+  }
+  
+  .navbar.scrolling-active .box-navbar .navigation ul li:nth-child(4) a {
+    color: white;
+    padding: 8px 10px;
+  }
+  
+  .navbar.scrolling-active .box-navbar .navigation ul li:nth-child(4) {
+    background-color: #e8bd3b;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar.scrolling-active .box-navbar .navigation ul li:nth-child(4) i {
+    color: #FFF;
+    transition: all 0.3s ease;
+  }
+  
+  
+  /* NAVBAR - X SCROLLING */
+  .navbar .box-navbar i.ri-menu-line {
+    display: none;
+  }
+  
+  .navbar .box-navbar .navigation ul li i {
+    display: none;
+  }
+  
+  .navbar .box-navbar .navigation i.ri-close-line {
+    display: none;
+  }
+  
+  .navbar .box-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .brand img {
+    width: 130px;
+    height: 80px;
+  }
+  
+  
+  .navbar .navigation .logo-navbar {
+    width: 100%;
+    padding: 30px 30px 0 30px;
+  }
+  
+  .navbar .box-navbar .navigation ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .navbar .box-navbar .navigation ul li {
+    list-style-type: none;
+    transition: all 0.2s;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: all ease-in 0.2s;
+    padding: 8px 10px;
+  }
+  
+  .navbar .box-navbar .navigation ul li:hover {
+    background-color: #e8bd3b;
+  }
+  
+  .navbar .box-navbar .navigation ul li a {
+    text-decoration: none;
+    color: #2f668f;
+    padding: 8px 10px;
+  }
+  
+  .navbar .box-navbar .navigation ul li:hover a {
+    color: white;
+  }
+  
+  .navbar .box-navbar .navigation ul li:nth-child(4){
+    background-color: #e8bd3b;
+  }
+  
+  .navbar .box-navbar .navigation ul li:nth-child(4) a{
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #2f668f;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar .box-navbar .navigation ul li:nth-child(4) i {
+    transition: all 0.3s ease;
+  }
+  
+  @media screen and (max-width: 990px){
+    /* NAVBAR */
+    .navbar.scrolling-active .box-navbar i.ri-menu-line{
+        color: white;
+        font-weight: 900;
+    }
+  
+    .navbar .box-navbar i.ri-menu-line {
+        display: block;
+        font-size: 28px;
+        font-weight: 900;
+        color: #2f668f;
+        cursor: pointer;
+    }
+  
+  
+    .navbar .box-navbar .navigation {
+        position: absolute;
+        top: 0;
+        right: -300px;
+        width: 250px;
+        height: 100vh;
+        background-color: #2f668f;
+        transition: all 0.3s ease;
+    }
+  
+    .navbar .box-navbar .navigation.menu-active {
+        right: 0;
+    }
+  
+    .navbar .box-navbar .navigation i.ri-close-line {
+        display: block;
+        padding: 10px;
+        border-radius: 100%;
+        background-color: white;
+        color: #2f668f;
+        font-size: 25px;
+        font-weight: 900;
+        position: absolute;
+        top: 50%;
+        left: -20px;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+  
+    .navbar .box-navbar .navigation ul {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 30px;
+        padding: 0 30px 0 0;
+    }
+  
+    .navbar .box-navbar .navigation ul li a {
+        color: #FFF;
+    }
+  
+    .navbar .box-navbar .navigation ul li a:hover {
+        color: #2f668f;
+    }
+  
+    .navbar .box-navbar .navigation ul li i {
+        display: inline-block;
+        color: #FFF;
+        margin-inline: 10px;
+    }
+  
+    .navbar .box-navbar .navigation ul li:hover i {
+        color: #2f668f;
+    }
+  
+    .navbar .box-navbar .navigation ul li:nth-child(4) {
+        color: #2f668f;
+    }
+  
+    .navbar .box-navbar .navigation ul li:nth-child(4) i {
+        color: #2f668f;
+    }
+  }
+  
+  @media screen and (min-width: 990px) {
+    .navbar .navigation .logo-navbar {
+        display: none;
+    }
+  
+    .container-navbar {
+      width: 80%;
+      margin-inline: auto;
+      transition: all 0.3s linear;
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      -ms-transition: all 0.3s linear;
+      -o-transition: all 0.3s linear;
+    }
+}
+
+.news--title h1 {
+    padding-top: 128px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 1rem;
+  }
+  
+  .news--title .line {
+    background-color: #333;
+    width: 100%;
+    height: 3px;
+    opacity: 80%;
+    margin-bottom: 70px;
+  }
 
 .container {
     width: 80%;
