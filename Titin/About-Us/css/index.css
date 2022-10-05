@@ -150,16 +150,16 @@
 
 .navbar .box-navbar .navigation ul li a {
   text-decoration: none;
-  color: #2f668f;
+  color: white;
   padding: 8px 10px;
 }
 
 .navbar .box-navbar .navigation ul li:nth-child(1) a {
-  color: white;
+  color: #2f668f;
 }
 
 .navbar .box-navbar .navigation ul li:hover a {
-  color: white;
+  color: #2f668f;
 }
 
 .navbar .box-navbar .navigation ul li:nth-child(4){
@@ -197,7 +197,7 @@
       display: block;
       font-size: 28px;
       font-weight: 900;
-      color: #2f668f;
+      color: white;
       cursor: pointer;
   }
 
@@ -285,25 +285,20 @@
   }
 }
 
-.main {
-  padding-top: 80px;
-}
-
-.news--title h1 {
+.jumbotron {
+  padding: 100px;
+  background-image: url(../../../Rael&Gilang/BACK.png) ;
+  background-position: center;
+  background-size: cover;
+  height: 250px;
   text-align: center;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 32px;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
+  color: #fff;
+  margin-bottom: 20px;
 }
 
-.news--title .line {
-  background-color: #333;
-  width: 100%;
-  height: 3px;
-  opacity: 80%;
-  margin-bottom: 70px;
+.jumbotron h1 {
+margin-top: 30px;
+font-size: 35px;
 }
 
 .header .line {
@@ -482,5 +477,30 @@ h1{
   }
   .nav-btn {
     display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container-navbar {
+      width: 90%;
+  }
+
+  .jumbotron {
+    padding: 100px;
+    background-image: url(../../../Rael&Gilang/BACK.png) ;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: -50px;
+    transition: all .5s linear;
+    font-weight: 600;
+    margin-bottom: 60px;
+  }
+
+  .jumbotron h1 {
+    margin-top: 30px;
+    font-size: 30px;
   }
 }
