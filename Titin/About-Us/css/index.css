@@ -320,6 +320,8 @@ font-size: 35px;
   display: none;
 }
 
+
+/* Button Division */
 input[type=submit]{
   font-size: 15px;
   background: #1e4466;
