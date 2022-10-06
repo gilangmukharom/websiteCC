@@ -12,34 +12,45 @@ body {
 
   .card {
     width: 20rem;
-    height: 38rem;
+    height: 36rem;
     margin: 1.5rem;
+    border: 2px solid rgba(95, 95, 95, 0.4);
     border-radius: 10px;
 
     img {
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      width: 100%;
     }
 
     .card-body {
-      margin: 10px;
+      margin: 1rem;
     }
 
     h6 {
       text-transform: uppercase;
       font-size: 12px;
+      color: #666;
+      margin-bottom: 5px;
 
       span {
         font-weight: bold;
+        color: black;
       }
     }
 
     h5 {
       font-weight: bold;
+      margin-bottom: 7px;
+      font-size: 1rem;
 
       a {
         color: #222;
         text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
       }
     }
 
@@ -49,7 +60,7 @@ body {
   }
 
   .card:hover {
-    border: 2px solid rgba(21, 69, 201, 0.7);
+    border: 3px solid rgba(21, 69, 201, 0.7);
     transition: all 0.1s ease-in-out;
   }
 }
@@ -57,6 +68,18 @@ body {
 @media (min-width: 1400px) {
   .news--main .card {
     width: 25rem;
-    height: 42rem;
+    height: 43rem;
+
+    h6 {
+      font-size: 14px;
+    }
+
+    h5 {
+      font-size: 1.2rem;
+    }
+
+    .card-text {
+      font-size: 16px;
+    }
   }
 }
