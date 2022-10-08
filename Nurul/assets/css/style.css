@@ -64,17 +64,17 @@ body {
     color: white;
   }
   
-  .navbar.scrolling-active .box-navbar .navigation ul li:nth-child(4) a {
+  .navbar.scrolling-active .box-navbar .navigation ul li:nth-child(5) a {
     color: #2f668f;
     padding: 8px 10px;
   }
   
-  .navbar.scrolling-active .box-navbar .navigation ul li:nth-child(4) {
+  .navbar.scrolling-active .box-navbar .navigation ul li:nth-child(5) {
     background-color: #e8bd3b;
     transition: all 0.3s ease;
   }
   
-  .navbar.scrolling-active .box-navbar .navigation ul li:nth-child(4) i {
+  .navbar.scrolling-active .box-navbar .navigation ul li:nth-child(5) i {
     color: #FFF;
     transition: all 0.3s ease;
   }
@@ -138,11 +138,11 @@ body {
     color: #2f668f;
   }
   
-  .navbar .box-navbar .navigation ul li:nth-child(4){
+  .navbar .box-navbar .navigation ul li:nth-child(5){
     background-color: #e8bd3b;
   }
   
-  .navbar .box-navbar .navigation ul li:nth-child(4) a{
+  .navbar .box-navbar .navigation ul li:nth-child(5) a{
     border: none;
     border-radius: 20px;
     font-weight: bold;
@@ -150,7 +150,7 @@ body {
     transition: all 0.3s ease;
   }
   
-  .navbar .box-navbar .navigation ul li:nth-child(4) i {
+  .navbar .box-navbar .navigation ul li:nth-child(5) i {
     transition: all 0.3s ease;
   }
   
@@ -224,11 +224,11 @@ body {
         color: #2f668f;
     }
   
-    .navbar .box-navbar .navigation ul li:nth-child(4) {
+    .navbar .box-navbar .navigation ul li:nth-child(5) {
         color: #2f668f;
     }
   
-    .navbar .box-navbar .navigation ul li:nth-child(4) i {
+    .navbar .box-navbar .navigation ul li:nth-child(5) i {
         color: #2f668f;
     }
   }
