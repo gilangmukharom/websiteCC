@@ -401,6 +401,7 @@ h1{
   align-items: center;
   justify-content: center;
   background-color: #e3f2fd;
+  
 }
 .testimonial {
   position: relative;
@@ -408,7 +409,10 @@ h1{
   width: 100%;
   padding: 50px 0;
   overflow: hidden;
+  margin-bottom: 40px;
+ 
 }
+
 .testimonial .image {
   height: 170px;
   width: 170px;
