@@ -9,13 +9,15 @@ body {
   background-image: url(BACK.png);
   background-position: center;
   background-size: cover;
-  height: 400px;
+  height: 250px;
   text-align: center;
   color: #fff;
-  margin-bottom: -200px;
+  margin-bottom: 50px;
 }
 
 .jumbotron h1 {
+  padding-top: 10px;
+  font-weight: 800;
   margin-top: 30px;
   font-size: 35px;
   font-family: 'Poppins', sans-serif;
@@ -121,7 +123,7 @@ body {
   background-color: #e8bd3b;
 }
 
-.navbar.scrolling-active .box-navbar .navigation ul li:nth-child(1) a {
+.navbar.scrolling-active .box-navbar .navigation ul li:nth-child(4) a {
   color: white;
   padding: 8px 10px;
 }
