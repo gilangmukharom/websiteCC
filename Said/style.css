@@ -63,7 +63,7 @@
 }
 
 .navbar.scrolling-active .box-navbar .navigation ul li a:hover {
-  color: #2f668f;
+  color: white;
 }
 
 .navbar.scrolling-active .box-navbar .navigation ul li:nth-child(5) {
@@ -149,7 +149,7 @@
 }
 
 .navbar .box-navbar .navigation ul li:hover a {
-  color: #fff;
+  color: #2f668f;
 }
 
 .navbar .box-navbar .navigation ul li:nth-child(1) a {

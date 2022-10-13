@@ -255,10 +255,6 @@ body {
   background-color: #e8bd3b;
 }
 
-.navbar .box-navbar .navigation ul li:hover a {
-  color: #fff;
-}
-
 .navbar .box-navbar .navigation ul li:nth-child(1) a {
   color: white;
 }
@@ -295,6 +291,10 @@ body {
 .navbar .box-navbar .navigation ul li:nth-child(5) i {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+.navbar .box-navbar .navigation ul li:hover a {
+  color: #2f668f;
 }
 
 .w-footer {
