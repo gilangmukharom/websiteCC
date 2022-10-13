@@ -333,13 +333,23 @@
     align-items: center;
 }
 
+.left .telp a {
+  color: black;
+  font-size: 20px;
+}
+
+.left .telp a:hover {
+  color: #2f668f;
+  text-decoration: underline;
+  transition: all 0.2s ease;
+}
+
 .left .telp i {
     padding: 0px 10px;
 }
 
 .left .telp h3 {
     padding: 0px 10px;
-    
 }
 
 .right {
