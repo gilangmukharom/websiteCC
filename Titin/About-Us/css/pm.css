@@ -124,6 +124,15 @@ h3{
 .our-team .social li a:hover{
     color:#1e4466;
     background: #f7f5ec;
-    text-decoration: none;
-    
+    text-decoration: none;   
 }
+
+.back {
+    font-size: 60px;
+    margin: 40px 0;
+  }
+  
+  .back a {
+    color: #1e4466;
+    transition: all ease-in 0.1s;
+  }
