@@ -22,44 +22,23 @@ iconClose.addEventListener("click", () => {
     sideBar.classList.remove("menu-active");
 })
 
-// // SEARCH
-// const data = [
-//     "Brand Ambassador Supervisor",
-//     "EO",
-//     "People & Culture",
-//     "Talent Engagement",
-//     "Open Recruitment Brand Ambassador Candidate College",
-//     "Webinar",
-//     "Bincang BPH",
-//     "Event Internal ",
-//     "Bonding Whatsapp",
-//     "Calon Brand Ambassador Candidate College",
-//     "Pelajar, fresh graduate",
-//     "Seluruh BPH Candidate College Batch 4",
-//     "Seluruh anggota volunteer Candidate College Batch 4 ",
-//     "Seluruh Internal CC"
-// ];
-
-// const search = document.getElementsByName('keyword')[0];
-// const data_section = document.getElementsByClassName('data')[0];
-
-// // Enter = Search
-// search.addEventListener('keyup', event => {
-// 	if (event.keyCode === 13) {
-// 		searchData();
-// 	}
-// });
-
-// // Pencarian data
-// function searchData() {
-// 	const search_value = search.value.toLowerCase();
-// 	const data_filtered = data.slice(0);
-
-// 	data_section.innerHTML = "";
-// 	for (var i = 0; i < data_filtered.length; i++) {
-// 		if ( data_filtered[i].toLowerCase().includes(search_value) ) {			
-
-// 			data_section.innerHTML += "<a href='#'>"+data_filtered[i]+"</a>";
-// 		}
-// 	}	
-// }
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    
+    
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.visibility = "visible";
+            li[i].style.display = "";
+            
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}

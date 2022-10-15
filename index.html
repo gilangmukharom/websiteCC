@@ -27,14 +27,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="Said/style.css">
-    <link rel="stylesheet" href="Said/Asset/News/assets/css/main.css">
-    <link rel="stylesheet" href="Said/Asset/News/assets/css/lightslider.css">
+    <link rel="stylesheet" href="./Said/style.css">
+    <link rel="stylesheet" href="./Said/Asset/News/assets/css/main.css">
+    <link rel="stylesheet" href="./Said/Asset/News/assets/css/lightslider.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 
     <!-- JS -->
-    <script src="Said/Asset/News/assets/js/jquery.js"></script>
-    <script src="Said/Asset/News/assets/js/lightslider.js"></script>
+    <script src="./Said/Asset/News/assets/js/jquery.js"></script>
+    <script src="./Said/Asset/News/assets/js/lightslider.js"></script>
 
 </head>
 <body>
@@ -44,29 +44,29 @@
         <div class="container">
             <div class="box-navbar">
                 <div class="brand">
-                    <img src="Said/Asset/HEADER_CC-removebg-preview.png" alt="Candidate College">
+                    <img src="./Said/Asset/HEADER_CC-removebg-preview.png" alt="">
                 </div>
                 <div class="navigation">
-                    <img src="Said/Asset/HEADER_CC-removebg-preview.png" alt="Candidate College" class="logo-navbar">
+                    <img src="./Said/Asset/HEADER_CC-removebg-preview.png" alt="" class="logo-navbar">
                     <ul>
                         <li>
                             <a href="index.html">Home</a>
                             <i class="fa-solid fa-house"></i>
                         </li>
                         <li>
-                            <a href="Titin/About-Us/about-us.html">About Us</a>
+                            <a href="./Titin/About-Us/about-us.html">About Us</a>
                             <i class="fa-solid fa-users"></i>
                         </li>
                         <li>
-                            <a href="Rael&Gilang/index.html">Contact Us</a>
+                            <a href="./Rael&Gilang/index.html">Contact Us</a>
                             <i class="fa-solid fa-phone"></i>
                         </li>
                         <li>
-                            <a href="Rafi/index.html">News</a>
+                            <a href="./Rafi/index.html">News</a>
                             <i class="fa-solid fa-newspaper"></i>
                         </li>
                         <li>
-                            <a href="Nurul/index.html">Our Program</a>
+                            <a href="./Nurul/index.html">Our Program</a>
                             <i class="fa-solid fa-user"></i>
                         </li>
                     </ul>
@@ -89,14 +89,21 @@
                 <div class="box">
                     <h1>CANDIDATE COLLEGE</h1>
                     <p><span>"</span>Candidate College is an Education Platform organization that works to facilitate students in Indonesia at home and abroad to achieve a quality education system</p>
-                    <!-- <div class="search-box">
-                        <input type="text" placeholder="Cari Info Apa Hari Ini?" name="keyword">
+                    <div class="search-box">
+                        <input type="text" placeholder="Cari Info Apa Hari Ini?" name="keyword" id="myInput" onkeyup="myFunction()" title="Type in a name">
                         <div class="search-icon">
                             <i class="fas fa-search"></i>
                         </div>
                       </div>
-                      <div class="data"></div>
-                    </div> -->
+                      <div class="data">
+                        <ul id="myUL" style="visibility: hidden">
+                            <li><a href="./Titin/About-Us/about-us.html#sosmed">sosmed footer</a></li>
+                            <li><a href="#">brand</a></li>
+                            <li><a href="#">webdev</a></li>
+                            <li><a href="#">RND</a></li>
+                          </ul>
+                      </div>
+                    </div>
                 <div class="box2"></div>
             </div>
         </div>
@@ -109,12 +116,123 @@
             <div class="month">
                 <h1>OUR PROGRAMS</h1>
             </div>
-
+            <div class="program-list">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">  
+                        <div class="swiper-slide card">
+                            <img src="./Nurul/assets/img/iniya.png" alt="" width="300px">
+                            <div class="detail">
+                                <div class="label">
+                                    <p class="category">Unknown</p>
+                                    <p class="access">Unknown</p>
+                                </div>
+                                <div class="title">
+                                    <h1>Coming Soon!</h1>
+                                </div>
+                                <div class="body-card">
+                                    <ul class="fa-ul">
+                                        <li><span class="fa-li"><i class="fa-solid fa-calendar-days"></i></span>-</li>
+                                        <li><span class="fa-li"><i class="fa-solid fa-clock"></i></span>-</li>
+                                        <li><span class="fa-li"><i class="fa-solid fa-users"></i></span>-</li>
+                                        <li><span class="fa-li"><i class="fa-solid fa-microphone"></i></span> -
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <img src="./Nurul/assets/img/iniya.png" alt="" width="300px">
+                            <div class="detail">
+                                <div class="label">
+                                    <p class="category">Unknown</p>
+                                    <p class="access">Unknown</p>
+                                </div>
+                                <div class="title">
+                                    <h1>Coming Soon!</h1>
+                                </div>
+                                <div class="body-card">
+                                    <ul class="fa-ul">
+                                        <li><span class="fa-li"><i class="fa-solid fa-calendar-days"></i></span>-</li>
+                                        <li><span class="fa-li"><i class="fa-solid fa-clock"></i></span>-</li>
+                                        <li><span class="fa-li"><i class="fa-solid fa-users"></i></span>-</li>
+                                        <li><span class="fa-li"><i class="fa-solid fa-microphone"></i></span> -
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <img src="./Nurul/assets/img/iniya.png" alt="" width="300px">
+                            <div class="detail">
+                                <div class="label">
+                                    <p class="category">Unknown</p>
+                                    <p class="access">Unknown</p>
+                                </div>
+                                <div class="title">
+                                    <h1>Coming Soon!</h1>
+                                </div>
+                                <div class="body-card">
+                                    <ul class="fa-ul">
+                                        <li><span class="fa-li"><i class="fa-solid fa-calendar-days"></i></span>-</li>
+                                        <li><span class="fa-li"><i class="fa-solid fa-clock"></i></span>-</li>
+                                        <li><span class="fa-li"><i class="fa-solid fa-users"></i></span>-</li>
+                                        <li><span class="fa-li"><i class="fa-solid fa-microphone"></i></span> -
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <img src="./Nurul/assets/img/iniya.png" alt="" width="300px">
+                            <div class="detail">
+                                <div class="label">
+                                    <p class="category">Unknown</p>
+                                    <p class="access">Unknown</p>
+                                </div>
+                                <div class="title">
+                                    <h1>Coming Soon!</h1>
+                                </div>
+                                <div class="body-card">
+                                    <ul class="fa-ul">
+                                        <li><span class="fa-li"><i class="fa-solid fa-calendar-days"></i></span>-</li>
+                                        <li><span class="fa-li"><i class="fa-solid fa-clock"></i></span>-</li>
+                                        <li><span class="fa-li"><i class="fa-solid fa-users"></i></span>-</li>
+                                        <li><span class="fa-li"><i class="fa-solid fa-microphone"></i></span> -
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <img src="./Nurul/assets/img/iniya.png" alt="" width="300px">
+                            <div class="detail">
+                                <div class="label">
+                                    <p class="category">Unknown</p>
+                                    <p class="access">Unknown</p>
+                                </div>
+                                <div class="title">
+                                    <h1>Coming Soon!</h1>
+                                </div>
+                                <div class="body-card">
+                                    <ul class="fa-ul">
+                                        <li><span class="fa-li"><i class="fa-solid fa-calendar-days"></i></span>-</li>
+                                        <li><span class="fa-li"><i class="fa-solid fa-clock"></i></span>-</li>
+                                        <li><span class="fa-li"><i class="fa-solid fa-users"></i></span>-</li>
+                                        <li><span class="fa-li"><i class="fa-solid fa-microphone"></i></span> -
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
     </section>
 
     <!-- NEWS -->
     <div class="news" id="news">
-        <h1><a href="Rafi/index.html">SECTION NEWS</a></h1>
+        <h1><a href="">SECTION NEWS</a></h1>
 
         <div class="container">
     
@@ -125,7 +243,7 @@
                 <li class="item-a">
                   <div class="card">
                     <!-- Foto -->
-                    <img src="Said/Asset/News/img/1.jpg" class="card-img-top" alt="news">
+                    <img src="./Said/Asset/News/img/1.jpg" class="card-img-top" alt="news">
                     <div class="card-body">
                       <h6>2 days ago by <span>candidate college</span></h6>
                       <!-- Judul -->
@@ -138,7 +256,7 @@
               
                 <li class="item-b">
                   <div class="card">
-                    <img src="Said/Asset/News/img/2.jpg" class="card-img-top" alt="news">
+                    <img src="./Said/Asset/News/img/2.jpg" class="card-img-top" alt="news">
                     <div class="card-body">
                       <h6>3 days ago by <span>candidate college</span></h6>
                       <h5><a href="#">Improve Your Public Speaking</a></h5>
@@ -149,7 +267,7 @@
               
                 <li class="item-c">
                   <div class="card">
-                    <img src="Said/Asset/News/img/3.jpg" class="card-img-top" alt="news">
+                    <img src="./Said/Asset/News/img/3.jpg" class="card-img-top" alt="news">
                     <div class="card-body">
                       <h6>5 days ago by <span>candidate college</span></h6>
                       <h5><a href="#">Instagram Takeover: Beasiswa di Korea</a></h5>
@@ -192,7 +310,7 @@
                 </div>
                 <div class="grid-double">
                     <div class="grid-2">
-                        <h3><a href="Nurul/index.html" target="_blank">Program</a></h3>
+                        <h3><a href="./Nurul/index.html" target="_blank">Program</a></h3>
                         <div class="p-agustus">
                             <div class="program-agustus">
                                 <div class="grid-a">
@@ -216,7 +334,7 @@
                         </div>
                     </div>
                     <div class="grid-3">
-                        <h3><a href="Rafi/index.html" target="_blank">News</a></h3>
+                        <h3><a href="./Rafi/index.html" target="_blank">News</a></h3>
                         <h4>Agustus</h4>
                             <div class="n-agustus">
                                 <ul>
@@ -234,6 +352,7 @@
             </div>
             <div class="grid-sosmed">
                 <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
                     <li><a href="https://twitter.com/CCollege_Ind" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
                     <li><a href="https://www.linkedin.com/company/candidate-college/mycompany/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
                     <li><a href="https://open.spotify.com/show/0xhjenJefepCIKH5UeVyiE?si=08402adcbd92430b" target="_blank"><i class="fa-brands fa-spotify"></i></a></li>
@@ -248,9 +367,10 @@
     </div>
     
     <!-- JS -->
-    <script src="Said/script.js"></script>
-    <script src="Said/Asset/News/assets/js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./Said/script.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> -->
+    <script src="./Said/Asset/News/assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./Nurul/assets/slider.js"></script>
 </body>
 </html>
