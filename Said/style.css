@@ -191,6 +191,7 @@
   justify-content: center;
   max-width: 100%;
   height: 100vh;
+  padding-top: 200px;
   transition: all 0.4s linear;
 }
 
@@ -400,6 +401,14 @@ li {
 @media screen and (max-width: 900px) {
   .container {
     width: 90%;
+  }
+
+  .container-hero {
+    background-position: top 0px left -275px ;
+  }
+
+  .search-box input {
+    font-size: 14px;
   }
 
   .jumbotron {
