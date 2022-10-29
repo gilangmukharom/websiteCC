@@ -1,5 +1,5 @@
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Inter", sans-serif;
   margin-bottom: 5rem;
 }
 
@@ -9,17 +9,17 @@ body {
   background-image: url(BACK.png);
   background-position: center;
   background-size: cover;
-  height: 250px;
+  height: 400px;
   text-align: center;
   color: #fff;
-  /* margin-bottom: -200px; */
+  margin-bottom: -200px;
 }
 
 .jumbotron h1 {
   margin-top: 30px;
   font-size: 35px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 }
 
 .news--main {
@@ -30,10 +30,10 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .news--main .card {
@@ -41,11 +41,14 @@ body {
   height: 37rem;
   margin: 1.5rem;
   border-radius: 10px;
+  position: relative;
 }
 
 .news--main .card img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  height: 20rem;
+  object-fit: cover;
 }
 
 .news--main .card .card-body {
@@ -192,11 +195,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .navbar .box-navbar .brand {
@@ -217,7 +220,7 @@ body {
 
 .navbar .box-navbar .navigation {
   padding: 24px 70px 10px 0;
-  letter-spacing: .2px;
+  letter-spacing: 0.2px;
 }
 
 .navbar .box-navbar .navigation ul {
@@ -225,8 +228,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 40px;
 }
 
@@ -253,6 +256,10 @@ body {
 
 .navbar .box-navbar .navigation ul li:nth-child(4) {
   background-color: #e8bd3b;
+}
+
+.navbar .box-navbar .navigation ul li:hover a {
+  color: #fff;
 }
 
 .navbar .box-navbar .navigation ul li:nth-child(1) a {
@@ -293,10 +300,6 @@ body {
   transition: all 0.3s ease;
 }
 
-.navbar .box-navbar .navigation ul li:hover a {
-  color: #2f668f;
-}
-
 .w-footer {
   width: 100%;
   height: 100%;
@@ -314,8 +317,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin: auto;
   padding: 70px 0;
   -webkit-transition: all 0.3s linear;
@@ -452,11 +455,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-bottom: -5rem;
 }
 
@@ -503,8 +506,8 @@ body {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     margin: auto;
     padding: 70px 0;
     -webkit-transition: all 0.3s linear;
@@ -527,7 +530,7 @@ body {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-auto-flow: column;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
@@ -591,11 +594,11 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .copyright h5 {
     font-size: 12px;
@@ -632,8 +635,8 @@ body {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     margin: auto;
     padding: 70px 0;
     -webkit-transition: all 0.3s linear;
@@ -656,7 +659,7 @@ body {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-auto-flow: column;
   }
   .footer .container-grid ul li {
@@ -686,7 +689,7 @@ body {
     display: grid;
     grid-auto-flow: column;
     -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .footer .container-grid .grid-2 .program-agustus .grid-a {
     margin-right: 25px;
@@ -717,11 +720,11 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .copyright h5 {
     font-size: 12px;
@@ -772,17 +775,17 @@ body {
     top: 50%;
     left: -20px;
     -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
     cursor: pointer;
   }
   .navbar .box-navbar .navigation ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
     gap: 30px;
     padding: 0 30px 0 0;
     margin-right: -50px;
@@ -819,7 +822,7 @@ body {
   .jumbotron h1 {
     margin-top: 30px;
     font-size: 32px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
   }
 }
 
@@ -833,32 +836,6 @@ body {
   .news--main .card {
     width: 25rem;
     height: 42rem;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .container-navbar {
-      width: 90%;
-  }
-
-  .jumbotron {
-    padding: 100px;
-    background-image: url(../../../Rael&Gilang/BACK.png) ;
-    background-position: center;
-    background-size: cover;
-    height: 300px;
-    text-align: center;
-    color: #fff;
-    margin-bottom: -50px;
-    transition: all .5s linear;
-    font-weight: 600;
-    margin-bottom: 60px;
-  }
-
-  .jumbotron h1 {
-    margin-top: 30px;
-    font-size: 30px;
-    line-height: 40px;
   }
 }
 /*# sourceMappingURL=main.css.map */
