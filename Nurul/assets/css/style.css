@@ -375,6 +375,11 @@ body {
 .fa-ul {
   font-size: 13px;
   font-family: 'Poppins', sans-serif;
+  color: #000;
+}
+
+.fa-ul:active {
+  color: #000;
 }
 
 li {
