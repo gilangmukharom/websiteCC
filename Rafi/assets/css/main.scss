@@ -1,6 +1,7 @@
 body {
   font-family: 'Inter', sans-serif;
   margin-bottom: 5rem;
+  // overflow-x: hidden;
 }
 
 // NEWS
@@ -28,11 +29,22 @@ body {
   display: flex;
   flex-direction: row;
   // flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    display: block;
+    list-style: none;
+  }
 
   .card {
     width: 20rem;
-    height: 37rem;
+    // height: 37rem;
+    // padding-bottom: 2rem;
     margin: 1.5rem;
     border-radius: 10px;
 
@@ -43,6 +55,7 @@ body {
 
     .card-body {
       margin: 10px;
+      padding-bottom: 2rem;
     }
 
     h6 {
@@ -793,9 +806,8 @@ body {
   }
 }
 
-@media (min-width: 1400px) {
-  .news--main .card {
-    width: 25rem;
-    height: 42rem;
-  }
-}
+// @media (min-width: 1400px) {
+//   .news--main .card ul li{
+    
+//   }
+// }
